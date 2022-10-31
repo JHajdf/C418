@@ -1,0 +1,212 @@
+    @charset "utf-8";
+    /* CSS Document */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        /* font-size: 62.5%; */
+        color: #000;
+        font-family: Helvetica Neue, PingFang SC, Microsoft YaHei, Helvetica, Arial, sans-serif;
+        height: 100%;
+        /* overflow: hidden; */
+    }
+	
+    a {
+        text-decoration: none;
+		color: #000;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    .main{
+        background: url("./img/background.png") 0 0 no-repeat;
+        background-size: 100% 210%;
+        background-color: black;
+        color: white;
+    }
+
+    .header {
+        height: 15%;
+		padding: 0 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+    .headerleft img{
+        width: 70px;
+        vertical-align: middle;
+    }
+    .headerleft span{
+        font-weight: bold;
+        font-size: 22px;
+        padding-left: 30px;
+    }
+    .headerright a{
+        color: white;
+        font-size: 18px;
+        margin: 0 20px;
+    }
+
+    .content1{
+        box-sizing: border-box;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 8%;
+        padding-bottom: 10%;
+        background: url("./img/banner_figure.png") right no-repeat,url("./img/3-android.png") bottom no-repeat;
+        background-size: auto 90%,100% 50%;
+    }
+    .con1top p{
+        font-size: 23px;
+        line-height: 50px;
+    }
+    .con1bot a{
+        text-align: center;
+        width: 190px;
+        line-height: 65px;
+        font-weight: bold;
+        display: block;
+        color: white;
+        height: 65px;
+        background: url("./img/download_background.png") 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+    .con1bot span{
+        font-size: 14px;
+        padding-left: 20px;
+        line-height: 40px;
+    }
+
+    .content2{
+        height: 110%;
+    }
+    .con2img{
+        height: calc( 100% - 100px);
+        padding: 50px 8%;
+    }
+    .con2img img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content3{
+        width: 100%;
+        height: 100%;
+    }
+    .content3 div{
+        height: 100%;
+        text-align: center;
+        background: url("./img/onlien_protect.png") 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+    .content3 h1{
+        padding: 50px 0px;
+    }
+    .content3 p{
+        font-size: 18px;
+    }
+	
+    .content4{
+        padding: 50px 0px;
+        text-align: center;
+    }
+    .content4 p {
+        font-size: 18px;
+        line-height: 60px;
+        padding-bottom: 30px;
+    }
+    .content4 div{
+        margin: auto;
+        width: 15%;
+    }
+    .content4 img{
+        width: 100%;
+    }
+
+    /* body.privacy-body {
+        overflow: auto;
+		background: url(img/img_phone.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+    }
+     */
+    .privacy {
+        padding: 3rem 3rem;
+        color: #000;
+    }
+    
+    .privacy h1 {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .privacy p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .privacy li {
+        margin-top: 2rem;
+    }
+    
+    .privacy h3 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin: 3rem 0 1rem;
+    }
+    
+    .privacy h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 2rem 0 1rem;
+    }
+    
+    .privacy a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .privacy a:hover {
+        text-decoration: none;
+    }
+	.privacy .bold{
+		font-weight: bold;
+	}
+	/* @media screen and (max-width: 1680px){
+	  .contact{
+		  margin-left: -300px;
+	  }
+	} */
+	@media screen and (max-width: 960px){
+		.privacy {
+		    padding: 1rem 2rem;
+		    color: #000;
+		}
+		.privacy h1 {
+		    font-size: 2rem;
+		    line-height: 3rem;
+		}
+		.privacy p {
+		    font-size: 1rem;
+		    line-height: 2rem;
+		    margin-top: 1rem;
+		}
+	}
